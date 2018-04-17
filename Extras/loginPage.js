@@ -1,8 +1,8 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         // User is signed in.
-        document.getElementById("login").style.display="none";
-        // document.getElementById("logout").style.display="block";
+         document.getElementById("login").style.display="none";
+         document.getElementById("logout").style.display="block";
         var user1 = firebase.auth().currentUser;
         if(user1!=null)
         var email=user1.email;
@@ -11,7 +11,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     } else {
         // No user is signed in.
         document.getElementById("login").style.display="block";
-        // document.getElementById("logout").style.display="none";
+         document.getElementById("logout").style.display="none";
 
 
     }

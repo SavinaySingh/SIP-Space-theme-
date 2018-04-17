@@ -196,8 +196,9 @@
         <ul class="navbar-nav mr-auto"></ul>
         <form class="form-inline my-2 my-lg-0 ">
             <pre>                       </pre>
-            <a class="btn  btn-login btn-outline-light btn-sm my-2 my-sm-0" data-toggle="modal" href="#exampleModalLong" ><b>Login</b></a>
-            <a class="btn  btn-login btn-outline-light btn-sm my-2 my-sm-0" data-toggle="modal" href="#exampleModalLong2" ><b>Register</b></a>
+            <a class="btn  btn-login btn-outline-light btn-sm my-2 my-sm-0" data-toggle="modal" id="login" href="#exampleModalLong" ><b>Sign in</b></a>
+            <a class="btn  btn-login btn-outline-light btn-sm my-2 my-sm-0" data-toggle="modal" id="register" href="#exampleModalLong2" ><b>Sign up</b></a>
+            <a class="btn  btn-login btn-outline-light btn-sm my-2 my-sm-0" data-toggle="modal" id="logout" href="#1" onclick="logout()" ><b>Logout</b></a>
         </form>
     </div>
 </nav>
@@ -333,14 +334,10 @@
                                         <li>Client: Explore</li>
                                         <li>Category: Graphic Design</li>
                                     </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fa fa-times"></i>
-                                        Close Startup</button>
+
                                     <br><br>
-                                    <input type="text" placeholder="Upload Your Resume ">
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fab fa-searchengin"></i>
-                                        Browse</button>
+                                    <input type="text" class="form-group col-md-12" placeholder="Drive Link for Resume ">
+                                    <br>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-cloud-upload-alt"></i>
                                         Upload</button>
@@ -372,15 +369,11 @@
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
 
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary" type="submit" onclick="login()" data-dismiss="modal">Submit</button>
                     </div>
                 </div>
             </div>
@@ -400,7 +393,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                <input type="email" class="form-control" id="inputEmail4" aria-describedby="emailHelp" placeholder="Email">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">Password</label>
@@ -408,12 +401,8 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <label for="inputAddress">College</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Delhi Technological University">
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -422,30 +411,17 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
+                                <input type="text" class="form-control" id="inputState">
                             </div>
-                            <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
+
                         </div>
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Check me out
-                                </label>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+
+
                     </form>
                 </div>
                 <div class="modal-footer">
 
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary"  onclick="signUp()" data-dismiss="modal">Sign in</button>
                 </div>
             </div>
         </div>
@@ -515,24 +491,81 @@
 
         window.scroll(0, marginY);
     }
+
+
+
+    
     </script>
     <!--<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!--<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>-->
-    <!--<script>-->
-        <!--// Initialize Firebase-->
-        <!--var config = {-->
-            <!--apiKey: "AIzaSyD5hULefwnZz0IsKXBaVbjAVwKcFkpZ8GA",-->
-            <!--authDomain: "startupinternshipportal.firebaseapp.com",-->
-            <!--databaseURL: "https://startupinternshipportal.firebaseio.com",-->
-            <!--projectId: "startupinternshipportal",-->
-            <!--storageBucket: "",-->
-            <!--messagingSenderId: "941057444916"-->
-        <!--};-->
-        <!--firebase.initializeApp(config);-->
-    <!--</script>-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD5hULefwnZz0IsKXBaVbjAVwKcFkpZ8GA",
+            authDomain: "startupinternshipportal.firebaseapp.com",
+            databaseURL: "https://startupinternshipportal.firebaseio.com",
+            projectId: "startupinternshipportal",
+            storageBucket: "startupinternshipportal.appspot.com",
+            messagingSenderId: "941057444916"
+        };
+        firebase.initializeApp(config);
+</script>
+
+<script>
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            // User is signed in.
+            document.getElementById("login").style.display="none";
+            document.getElementById("register").style.display="none";
+            document.getElementById("logout").style.display="block";
+            // ...
+        } else {
+            // User is signed out.
+            document.getElementById("login").style.display="block";
+            document.getElementById("register").style.display="block";
+            document.getElementById("logout").style.display="none";
+            // ...
+        }
+    });
+    function login() {
+        var emailId=document.querySelector("#exampleInputEmail1").value;
+        var password_id=document.querySelector("#exampleInputPassword1").value;
+        firebase.auth().signInWithEmailAndPassword(emailId, password_id).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ...
+            window.alert("Wrong Attempt :" + errorMessage);
+        });
+    }
+
+    function signUp() {
+        var emailId=document.querySelector("#inputEmail4").value;
+        var password_id=document.querySelector("#inputPassword4").value;
+        firebase.auth().createUserWithEmailAndPassword(emailId, password_id).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            window.alert("Wrong Attempt :" + errorMessage);
+            // ...
+        });
+    }
+    function logout() {
+        firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+        }).catch(function(error) {
+            // An error happened.
+        });
+
+
+    }
+
+</script>
+
+
 </body>
 </html>
