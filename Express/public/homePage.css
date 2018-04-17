@@ -1,0 +1,309 @@
+
+
+     body{
+         background-color: black;
+     }
+    /*Created for spacing between buttons on navbar*/
+    .btn-login{
+        margin-right:17px ;
+    }
+
+    /*Internship Portal Logo*/
+    .logo{
+        width: 180px;
+        height:90px;
+    }
+
+
+    .nav-bar-text{
+        margin-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: white;
+        position: absolute;
+        top:40%;
+        left: 90px;
+
+    }
+
+    .below-nav{
+        width: 100%;
+        height: 80px;
+    }
+    .main-text{
+        color: white;
+
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 45px;
+
+    }
+    #heading{
+        margin: 0px 80px 0 80px;
+        font-family: 'Raleway', sans-serif;
+
+    }
+
+    .heading{
+    text-align: center;
+    border-bottom: 2px solid white;
+    }
+
+
+/*RESPONSIVE*/
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        /*Ecell logo*/
+        #logo2{
+            width:200px ;
+            height: 100px;
+            margin-left: 23%;
+        }
+        .btn-start{
+            margin-left: 28%;
+        }
+        .parallax-effect-1{
+            background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 500px;
+            padding-top: 30px;
+        }
+        .parallax2 {
+            background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: inherit;
+        }
+        .nav-bar-text{
+            margin-top: 10px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: white;
+            position: absolute;
+            top:40%;
+            left: 86px;
+
+        }
+        .first img{
+            margin-left: 13%;
+        }
+        .first {
+            color: black;
+            background-color: white ;
+            border: 1px solid black;
+            width: inherit;
+            display: inline-block;
+            width: 100px;
+            height: 400px;
+            /*min-width: 310px;*/
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 200px;
+        }
+
+    }
+        @media only screen and (min-width: 620px) {
+            #logo2{
+                width:200px ;
+                height: 100px;
+                margin-left: 39%;
+
+            }
+            .btn-start{
+                margin-left: 43%;
+            }
+            .parallax-effect-1{
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: 800px;
+                padding-top: 250px;
+            }
+            .parallax2 {
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: inherit;
+            }
+            .first img{
+                margin-left: 9%;
+            }
+
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            #logo2{
+                width:200px ;
+                height: 100px;
+                margin-left: 35%;
+
+            }
+            .btn-start{
+                margin-left: 37%;
+            }
+            .parallax-effect-1{
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: 1000px;
+                padding-top: 250px;
+            }
+            .parallax2 {
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: inherit;
+                /*float: right;*/
+            }
+            .first img{
+                margin-left: 9%;
+            }
+
+        }
+
+
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            #logo2{
+                width:200px ;
+                height: 100px;
+                margin-left: 43%;
+
+            }
+            .btn-start{
+                margin-left: 45%;
+            }
+            .parallax-effect-1{
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: 1000px;
+                padding-top: 250px;
+
+            }
+            .parallax2 {
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: inherit;
+                /*float: right;*/
+            }
+            .first img{
+                margin-left: 9%;
+            }
+
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            #logo2{
+                width:200px ;
+                height: 100px;
+                margin-left: 43%;
+
+            }
+            .btn-start{
+                margin-left: 45%;
+            }
+            .parallax-effect-1{
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: 1000px;
+                padding-top: 250px;
+
+            }
+            .parallax2 {
+                background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
+                /*background: url("https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4854952e1d18e80245ff80ed1889532&w=1000&q=80") no-repeat center;*/
+                background-size: cover;
+                background-attachment: fixed;
+                height: inherit;
+                /*float: right;*/
+            }
+            .first img{
+                margin-left: 9%;
+            }
+
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+
+        }
+
+/*For the box*/
+    .box {
+        color: white;
+        font-size: 200%;
+        text-align: center;
+        font-family: Bookman Old Style;
+        width: 100%;
+    }
+
+    .first {
+        color: black;
+        background-color: white ;
+        border: 1px solid black;
+        width: inherit;
+        display: inline-block;
+        width: inherit;
+        min-width: 310px;
+        border-radius: 5px;
+        box-shadow: 0 2px 200px;
+        /*padding-left: 9%;*/
+        /*padding-right:9% ;*/
+        margin-bottom: 15px;
+
+    }
+
+
+    .name{
+        color: black;
+        padding-bottom: 100px;
+        font-family: Bookman Old Style;
+        text-align: center;
+        font-weight: 600;
+
+    }
+
+    .viewStartUp{
+        background-color:#e4c23a ;
+        margin-bottom: 0px;
+        font-family: Arial;
+        /*width: 430px;*/
+    }
+
+    .viewStartUp:hover{
+        background-color: green ;
+        margin-bottom: 0px;
+        font-family: Arial;
+        /*width: 430px;*/
+    }
+
+    .id img{
+
+        width: 100%;
+
+    }
+
+    .py-5{
+        background-color: black;
+    }
+
+
+

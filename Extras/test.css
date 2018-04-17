@@ -1,0 +1,73 @@
+p{
+    color: black;
+    font-size: 200%;
+    text-align: center;
+    font-family: Calibri;
+}
+
+body{
+    background-color: black;
+}
+
+button {
+    font-family: Arial;
+    color: white;
+    background-color: black;
+    border : none;
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 130%;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Calibri;
+}
+
+h2 {
+    color: black;
+    font-size: 200%;
+    text-align: center;
+    font-family: Arial Black;
+}
+
+#inside{
+    color: black;
+    background-color: #e4c23a;
+    height: 250px;
+}
+
+
+#outside{
+    background-color: white;
+
+    padding: 20px;
+}
+
+.empty{
+    height: 120px;
+    width: 40%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+div img{
+    float: left;
+}
+
+#video {
+    height: 476px;
+    width: 1920px;
+
+}
+
+iframe {
+    padding-left: 420px;
+    padding-top: 0px;
+}

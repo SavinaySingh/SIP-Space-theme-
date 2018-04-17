@@ -1,0 +1,28 @@
+/*.btn1,.btn2,.btn3{*/
+   /*background-color: #e4f6fd;*/
+/*}*/
+
+/*.btns2{*/
+    /*background-color: #97d1a5;*/
+/*}*/
+
+
+.viewStartUp{
+    background-color:#e4c23a ;
+    margin-bottom: 0px;
+    font-family: Arial;
+    /*width: 430px;*/
+}
+.box {
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    font-family: Bookman Old Style;
+    width: 100%;
+}
+.viewStartUp:hover{
+    background-color: green ;
+    margin-bottom: 0px;
+    font-family: Arial;
+    /*width: 430px;*/
+}
