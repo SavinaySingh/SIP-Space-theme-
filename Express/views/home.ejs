@@ -336,9 +336,9 @@
                                     </ul>
 
                                     <br><br>
-                                    <input type="text" class="form-group col-md-12" placeholder="Drive Link for Resume ">
+                                    <input type="text" class="form-group col-md-12" placeholder="Drive Link for Resume " id="resume">
                                     <br>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button" onclick="writeUserData()">
                                         <i class="fas fa-cloud-upload-alt"></i>
                                         Upload</button>
                                 </div>
@@ -562,6 +562,14 @@
         });
 
 
+    }
+
+     var i=0;
+    function writeUserData() {
+        var value=document.getElementById("resume").value;
+
+        var root=firebase.database().ref();
+        root.child(i++).set(value);
     }
 
 </script>
