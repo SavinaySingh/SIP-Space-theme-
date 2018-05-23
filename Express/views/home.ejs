@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Startup Internship Portal</title>
-
+    <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/500324233541451778/vLkQjD6H_400x400.jpeg" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="homePage.css">
     <style>
+        ul.social-buttons {
+            margin-bottom: 0;
+        }
+
+        ul.social-buttons li a {
+            font-size: 20px;
+            line-height: 40px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            color: white;
+            border-radius: 100%;
+            outline: none;
+            background-color: #212529;
+        }
+
+        ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+            background-color: #fed136;
+        }
+
         .d-block {
             height: 350px;
 
@@ -180,14 +203,14 @@
 
 <!--Home Page Image-->
 <div class="parallax-effect-1">
-    <a href="http://www.ecelldtu.in/"><img src="http://www.ecelldtu.in/img/ecell/logo.png" id="logo2"></a>
+    <a href="http://www.ecelldtu.in/"><img src="http://www.ecelldtu.in/images/ecell.png" id="logo2"></a>
     <p class="main-text"> <b>   Startup Internship Portal</b></p>
     <a class=" btn btn-primary btn-lg my-2 my-lg-0 btn-start" onclick="initScroll('top');return false;" href="#"  ><b>GET STARTED</b></a>
 </div>
 
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar  sticky-top" id="top" style="background-color: black ">
-    <a onclick="toTop(); return false;"><img class="logo" src="http://www.ecelldtu.in/img/ecell/logo.png"></a>
+    <a onclick="toTop(); return false;"><img class="logo" src="http://www.ecelldtu.in/images/ecell.png"></a>
     <a onclick="toTop(); return false;">  <p class="nav-bar-text navbar-brand" style="color: #f6fafb">   Startup Internship Portal</p> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: blue ;border-radius:15%">
         <img src="http://www.clker.com/cliparts/E/D/d/g/1/1/white-plus-hi.png" width="20px" height="20px"/>
@@ -273,6 +296,29 @@
 
         </div>
     </div>
+    <!-- About -->
+    <section id="about">
+        <div  style="background-color: white ; margin: 6px 17px 3px 17px" >
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <h2 class="section-heading text-uppercase text-center" style="border-bottom: 2px solid black"><b>About Startup Internship Portal</b></h2>
+                    <h5 class="section-subheading text-muted">
+                        <ol>
+                            <li>At the core of the idea is the belief to make all the internships in startups available to the students in a organized way.</li>
+                            <li>For the students struggling to get a meaningful internship every year, SIP is a friend, a mentor, an affectionate senior, and a boon.</li>
+                            <li>For the startups that use SIP to hire interns, we are a pleasant surprise, a benchmark of the world standards in customer service.</li>
+                            <li>But internally, we are a bunch of students (budding entrepreneurs) trying to solve a very hard problem – getting Indian engineers employed.</li>
+                        </ol>
+                    </h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
 </div>
 
 
@@ -428,26 +474,18 @@
     </div>
 
 
-    <!-- About -->
-    <section id="about">
-        <div class="container" style="background-color: white">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase" style="border-bottom: 2px solid black"><b>About Startup Internship Portal</b></h2>
-                    <h5 class="section-subheading text-muted">Here we will write something about the portal.Lorem ipsum dolor sit amet, mei ut aliquid epicuri noluisse, ex qui possim corrumpit neglegentur. Qui suscipit volutpat electram ne, mea debitis deleniti consetetur ad. Inani dicam tibique quo in, ei mei expetenda suscipiantur. Et quas platonem sadipscing mei, qui viris mentitum sadipscing ex.
-
-                        Te ius integre nominavi comprehensam, soluta eligendi gloriatur ex vel. Vis accusata moderatius id. Odio cibo recusabo ei mei, et est decore quidam splendide. Ea dico libris nam, ea graeco luptatum pri, soleat graeco te per. Solum laudem cu mei. In feugiat splendide mediocritatem vis.</h5>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!--Footer-->
     <footer class="py-5">
         <div class="container">
             <p class="m-0 text-center text-white">&copy; <a href="http://www.ecelldtu.in/">2018 ECell DTU.</a> All Rights Reserved</p>
+
+
+
+
         </div>
+        </div>
+
     </footer>
 
 
@@ -573,7 +611,6 @@
     }
 
 </script>
-
 
 </body>
 </html>
