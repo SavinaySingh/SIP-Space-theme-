@@ -52,6 +52,7 @@
     }
 
     #bt1{
+        position: relative;
         outline: none;
         border: none;
         cursor: pointer;
