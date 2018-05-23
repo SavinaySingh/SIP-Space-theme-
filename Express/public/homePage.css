@@ -51,6 +51,22 @@
     border-bottom: 2px solid white;
     }
 
+    #bt1{
+        outline: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 7px blue;
+        border-radius: 20px;
+    }
+     #bt1:hover {
+         box-shadow: 0 5px blue;
+         top: 2px;
+     }
+
+     #bt1:active {
+         box-shadow: 0 0 blue;
+         top: 7px;
+     }
 
 /*RESPONSIVE*/
 
@@ -115,7 +131,9 @@
                 margin: 0 auto;
             }
             .btn-start{
+                outline: none;
                 margin-left: 43%;
+
             }
             .parallax-effect-1{
                 background: url("http://spayce.me/wp-content/uploads/2018/02/galaxy-wallpaper-4k-space-galaxy-star-4k-ultra-hd-wallpaper.jpg") no-repeat center;
@@ -147,6 +165,7 @@
                 margin: 0 auto;
             }
             .btn-start{
+                outline: none;
                 margin-left: 37%;
             }
             .parallax-effect-1{
@@ -182,6 +201,7 @@
                 margin: 0 auto;
             }
             .btn-start{
+                outline: none;
                 margin-left: 45%;
             }
             .parallax-effect-1{
@@ -216,6 +236,7 @@
                 margin: 0 auto;
             }
             .btn-start{
+                outline: none;
                 margin-left: 45%;
             }
             .parallax-effect-1{
